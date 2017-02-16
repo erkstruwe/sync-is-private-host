@@ -18,7 +18,8 @@
     "unit": "jasmine JASMINE_CONFIG_PATH=jasmine.json",
     "unit:cover": "istanbul cover --include-all-sources --captureExceptions --root src -x \"**/*.spec.js\" node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=jasmine.json",
     "test": "npm run lint && npm run unit",
-    "preversion": "npm test"
+    "preversion": "npm test",
+    "postversion": "git push origin master && npm publish"
   },
   "engines": {
     "node": "^6.9.5",
