@@ -15,4 +15,12 @@ describe('sync-is-private-host', function() {
             expect(this.fn('www.google.com')).toBe(false)
         })
     })
+    describe('isPublic', function() {
+        beforeEach(function() {
+            this.fn = syncIsPrivateHost.isPublic
+        })
+        it('should return true for matches', function() {
+            expect(this.fn('localhost')).toBe(false)
+        })
+    })
 })

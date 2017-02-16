@@ -14,4 +14,8 @@ syncIsPrivateHost.isPrivate = function(host) {
     })
 }
 
+syncIsPrivateHost.isPublic = function(host) {
+    return !syncIsPrivateHost.isPrivate(host)
+}
+
 module.exports = syncIsPrivateHost
