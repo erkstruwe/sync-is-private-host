@@ -1,0 +1,30 @@
+{
+  "name": "sync-is-private-host",
+  "version": "0.1.0-rc.1",
+  "description": "Synchronously determine if a host is private (a.k.a. not publicly available)",
+  "license": "ISC",
+  "author": "Erk Struwe <estruwe@estruwe.de>",
+  "homepage": "https://github.com/erkstruwe/sync-is-private-host#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erkstruwe/sync-is-private-host.git"
+  },
+  "bugs": {
+    "url": "https://github.com/erkstruwe/sync-is-private-host/issues"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "unit": "jasmine JASMINE_CONFIG_PATH=jasmine.json",
+    "test": "npm run lint && npm run unit",
+    "preversion": "npm test"
+  },
+  "engines": {
+    "node": "^6.9.5",
+    "npm": "^3.10.10"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "jasmine": "^2.5.3"
+  }
+}
