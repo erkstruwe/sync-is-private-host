@@ -1,6 +1,6 @@
 {
   "name": "sync-is-private-host",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Synchronously determine if a host is private (a.k.a. not publicly available)",
   "license": "ISC",
   "author": "Erk Struwe <estruwe@estruwe.de>",
